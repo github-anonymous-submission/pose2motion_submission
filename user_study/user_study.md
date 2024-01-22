@@ -11,6 +11,7 @@ The sample form can found access [here](https://forms.gle/u2WNyWgoF2sPcGS4A).
 
 ### User Study Video
 The sample video shown can be see below. All video are synchronized to start at the same time and the order of ours vs motion builder is randomized.
+See - [here](https://github.com/github-anonymous-submission/pose2motion_submission/blob/main/user_study/user_study_sample.mp4) for a sample video used in the user study.
 <!-- include video -->
 <video width="50%" height="50%" controls>
   <source src="user_study_sample.mp4" type="video/mp4">
