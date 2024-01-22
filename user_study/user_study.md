@@ -7,10 +7,11 @@ Our study sampled 9 motion clips, three per character,  from different motion ca
 
 ### User Study Form
 The sample form can found access [here](https://forms.gle/u2WNyWgoF2sPcGS4A).
-<img src='user_study_intro.png'/ >
+<img src='user_study_intro.png'>
 
 ### User Study Video
 The sample video shown can be see below. All video are synchronized to start at the same time and the order of ours vs motion builder is randomized.
 <!-- include video -->
 <video width="50%" height="50%" controls>
   <source src="user_study_sample.mp4" type="video/mp4">
+</video>
