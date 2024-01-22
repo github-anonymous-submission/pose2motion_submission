@@ -19,7 +19,7 @@ python run_all_wgan_mixamo.py
 ```
 
 ## User Study
-check out "user_study.md" for more details.
+check out [user_study.md](https://github.com/github-anonymous-submission/pose2motion_submission/blob/main/user_study/user_study.md) for more details.
 
 
 ## Acknowledgement

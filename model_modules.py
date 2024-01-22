@@ -58,21 +58,6 @@ class EndEffectorLoss(nn.Module):
         
         poseA = poseA.clone()
         poseB = poseB.clone()
-        
-        # if self.velocity_virtual_node:
-        #     #poseA : batch,frame,joint,6
-        #     root_v_A = poseA.permute(0,3,1,2)[:,:,-1,:3].clone()
-        #     root_v_B = poseB.permute(0,3,1,2)[:,:,-1,:3].clone()
-        #     # poseA[:,-1,:] = torch.eye(3).cuda().reshape(-1)[:6]
-        #     # poseB[:,-1,:] = torch.eye(3).cuda().reshape(-1)[:6]
-        #     if self.use_global_y:
-        #         root_v_A[:,:,[0,2]] = root_v_A[:,:,[0,2]].cumsum(dim=1)
-        #         root_v_A = root_v_A.reshape([-1,3])
-        #         root_v_B[:,:,[0,2]] = root_v_B[:,:,[0,2]].cumsum(dim=1)
-        #         root_v_B = root_v_B.reshape([-1,3])
-        #     else:
-        #         root_v_A = root_v_A.cumsum(dim=1).reshape([-1,3])
-        #         root_v_B = root_v_B.cumsum(dim=1).reshape([-1,3])
 
         if self.window_size>0:
             self.window_size = poseA.shape[3]
@@ -92,10 +77,7 @@ class EndEffectorLoss(nn.Module):
             else:
                 root_v_A = root_v_A.cumsum(dim=0)
                 root_v_B = root_v_B.cumsum(dim=0)
-        # if self.velocity_virtual_node:
-        #     poseA[:,-1,:] = torch.eye(3).cuda().reshape(-1)[:6]
-        #     poseB[:,-1,:] = torch.eye(3).cuda().reshape(-1)[:6]
-
+  
         if self.remove_virtual_node:
             poseA = to_full_joint(poseA,infoA['remain_index'][0],infoA['pose_virtual_index'][0][0],infoA['pose_virtual_val'][0])
             poseB = to_full_joint(poseB,infoB['remain_index'][0],infoB['pose_virtual_index'][0][0],infoB['pose_virtual_val'][0])

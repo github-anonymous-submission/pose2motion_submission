@@ -310,15 +310,7 @@ class CycleGANModel(nn.Module):
         self.endeff_loss_B = self.endeff_loss_B_dict["loss_relative_to_T"]
         self.endeff_loss_B_temporal = self.endeff_loss_B_dict["loss_relative_temporal"]
         self.endeff_loss_B_contact = self.endeff_loss_B_dict["loss_contact"]
-        self.endeff_loss_B_height = self.endeff_loss_B_dict["loss_height_contact"]
-        # if lambda_End_temporal==0:
-        #     self.endeff_loss_B_temporal = 0
-        # if lambda_End_contact==0:
-        #     self.endeff_loss_B_contact = 0
-        # if lambda_loss_height==0:
-        #     self.endeff_loss_B_height = 0
-    
-            
+        self.endeff_loss_B_height = self.endeff_loss_B_dict["loss_height_contact"]  
      
         self.loss_G = self.loss_G_A * lambda_GAN + self.loss_G_B * lambda_GAN \
                                 + self.loss_cycle_A * lambda_A + self.loss_cycle_B * lambda_B \
