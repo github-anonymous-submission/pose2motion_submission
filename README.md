@@ -20,3 +20,7 @@ python run_all_wgan_mixamo.py
 
 ## User Study
 check out "user_study.md" for more details.
+
+
+## Acknowledgement
+Code takes inspiration from [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix), [Adversial Parametric Pose Prior](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) and [Deep-Motion-Editing](https://github.com/DeepMotionEditing/deep-motion-editing). 
