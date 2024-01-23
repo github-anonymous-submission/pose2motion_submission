@@ -5,8 +5,9 @@ We perform a user study to evaluate the quality of the generated motions. We com
 
 Our study sampled 9 motion clips, three per character,  from different motion categories (walking, running, and turning). Within each category, the target motion is randomly sampled to minimize bias. The anonymous participants are from within and outside of our university. 
 
+
 ### User Study Form
-The sample form can found access [here](https://forms.gle/u2WNyWgoF2sPcGS4A). \
+The sample form can found access [here](https://forms.gle/u2WNyWgoF2sPcGS4A). As the videos in the original user study are hosted on non-anonymous page, we only show part of the user study here. \
 <img src='user_study_intro.png' width="50%">
 
 ### User Study Video
